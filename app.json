@@ -1,0 +1,19 @@
+{
+  "name": "Test",
+  "description": "Test",
+  "version": "1.0.0",
+  "category": "Development",
+  "icon": "",
+  "developer": "jhonnathanboi-sudo",
+  "website": "",
+  "repository": {
+    "owner": "jhonnathanboi-sudo",
+    "name": "TEST2",
+    "branch": "main"
+  },
+  "release": {
+    "tag": "",
+    "asset": ""
+  },
+  "platform": "windows"
+}
