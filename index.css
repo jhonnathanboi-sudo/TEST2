@@ -3160,3 +3160,377 @@ input:focus-visible {
     justify-content: center;
   }
 }
+
+/* =========================================================
+   RELEASE PANEL
+   ========================================================= */
+
+.release-sidebar {
+  min-width: 0;
+}
+
+.release-panel {
+  position: sticky;
+  top: 30px;
+  overflow: hidden;
+  border: 1px solid #242424;
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    #171717 0%,
+    #101010 100%
+  );
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.release-panel-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 20px;
+  border-bottom: 1px solid #242424;
+}
+
+.release-panel-header .section-label {
+  margin-bottom: 7px;
+}
+
+.release-panel-header h3 {
+  margin: 0;
+  max-width: 190px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 750;
+  letter-spacing: -0.4px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.release-version-badge {
+  flex-shrink: 0;
+  padding: 6px 9px;
+  border: 1px solid #303030;
+  border-radius: 7px;
+  background: #1d1d1d;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.release-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 14px 20px 0;
+}
+
+.release-meta span {
+  padding: 6px 8px;
+  border: 1px solid #242424;
+  border-radius: 7px;
+  background: #181818;
+  color: #777;
+  font-size: 10px;
+}
+
+.release-description {
+  margin: 14px 20px 0;
+  padding: 12px;
+  border: 1px solid #242424;
+  border-radius: 10px;
+  background: #121212;
+}
+
+.release-description p {
+  margin: 0;
+  color: #777;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.release-files-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.release-files-header strong {
+  display: block;
+  color: #ddd;
+  font-size: 13px;
+}
+
+.enable-all-button {
+  flex-shrink: 0;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #303030;
+  border-radius: 7px;
+  background: #1b1b1b;
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.enable-all-button:hover {
+  border-color: #444;
+  background: #262626;
+  color: #fff;
+}
+
+.release-file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 12px;
+  padding: 0 20px;
+}
+
+.release-file-card {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #242424;
+  border-radius: 10px;
+  background: #151515;
+  transition: 0.15s ease;
+}
+
+.release-file-card:hover {
+  border-color: #383838;
+  background: #1a1a1a;
+  transform: translateY(-1px);
+}
+
+.release-file-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid #2c2c2c;
+  border-radius: 9px;
+  background: #1d1d1d;
+  color: #aaa;
+  font-size: 15px;
+}
+
+.release-file-info {
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.release-file-info strong {
+  overflow: hidden;
+  color: #ddd;
+  font-size: 11px;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.release-file-info span {
+  color: #606060;
+  font-size: 9px;
+}
+
+.release-file-download {
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid #2c2c2c;
+  border-radius: 7px;
+  background: #1c1c1c;
+  color: #aaa;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.release-file-download:hover {
+  background: #fff;
+  color: #000;
+}
+
+.release-download-all {
+  width: calc(100% - 40px);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px 20px 0;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 9px;
+  background: #fff;
+  color: #0b0b0b;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.release-download-all:hover {
+  background: #ddd;
+  transform: translateY(-1px);
+}
+
+.release-download-all > span {
+  font-size: 15px;
+}
+
+.release-download-all small {
+  color: #777;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.release-no-files {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 26px 14px;
+  border: 1px dashed #292929;
+  border-radius: 10px;
+  background: #111;
+  text-align: center;
+}
+
+.release-no-files-icon {
+  margin-bottom: 4px;
+  font-size: 22px;
+}
+
+.release-no-files strong {
+  color: #bbb;
+  font-size: 11px;
+}
+
+.release-no-files span {
+  max-width: 190px;
+  color: #555;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.release-empty-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  padding: 25px;
+  text-align: center;
+}
+
+.release-empty-selected > div {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 8px;
+  border: 1px solid #292929;
+  border-radius: 13px;
+  background: #191919;
+  font-size: 20px;
+}
+
+.release-empty-selected strong {
+  color: #bbb;
+  font-size: 12px;
+}
+
+.release-empty-selected span {
+  max-width: 210px;
+  margin-top: 5px;
+  color: #555;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.release-github-link {
+  width: calc(100% - 40px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 18px 20px 20px;
+  padding: 0 12px;
+  border: 1px solid #252525;
+  border-radius: 8px;
+  background: #131313;
+  color: #777;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.release-github-link span:first-child {
+  color: #aaa;
+}
+
+.release-github-link span:last-child {
+  margin-left: auto;
+  font-size: 14px;
+}
+
+.release-github-link:hover {
+  border-color: #353535;
+  background: #1b1b1b;
+  color: #fff;
+}
+
+/* Release layout */
+
+.app-details-page
+  > div:last-child {
+  align-items: start;
+}
+
+@media (max-width: 1050px) {
+  .app-details-page
+    > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  .release-panel {
+    position: static;
+  }
+
+  .release-sidebar {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .app-details-hero {
+    grid-template-columns: 1fr !important;
+  }
+
+  .app-details-icon {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .app-details-page h1 {
+    font-size: 36px !important;
+  }
+}
