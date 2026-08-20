@@ -1,19 +1,10 @@
 {
-  "name": "Test",
-  "description": "Test",
+  "name": "TEST",
+  "description": "Server test",
   "version": "1.0.0",
-  "category": "Development",
+  "category": "Utilities",
   "icon": "",
-  "developer": "jhonnathanboi-sudo",
-  "website": "",
-  "repository": {
-    "owner": "jhonnathanboi-sudo",
-    "name": "TEST2",
-    "branch": "main"
-  },
-  "release": {
-    "tag": "",
-    "asset": ""
-  },
+  "author": "Mineta 2.0",
+  "repository": "https://github.com/jhonnathanboi-sudo/TEST2",
   "platform": "windows"
 }
