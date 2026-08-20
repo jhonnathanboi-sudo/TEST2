@@ -1,10 +1,10 @@
 {
-  "name": "TEST",
-  "description": "Server test",
+  "name": "TEST2",
+  "description": "test",
   "version": "1.0.0",
   "category": "Utilities",
   "icon": "",
-  "author": "Mineta 2.0",
+  "author": "jhonnathanboi-sudo",
   "repository": "https://github.com/jhonnathanboi-sudo/TEST2",
   "platform": "windows"
 }
